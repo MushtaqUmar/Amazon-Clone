@@ -1,0 +1,377 @@
+*{    /* Universally to all elements*/
+    margin : 0;
+    font-family: Arial;
+    border:border-box;  /* Put margin, padding withing height and width of elements */
+}
+
+
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+
+    /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
+    display: flex;
+    align-items: center;    /* items center to cross-axis */
+
+    justify-content: space-evenly;
+}
+
+
+
+/* box 1  */
+.nav-logo{
+    height:49px;
+    width: 99px;
+    background-image: url("../ProjectPhotos/amazon_logo.png");
+    background-size: cover;
+
+   
+}
+
+/* .logo{
+    
+    height: 50px;
+    width: 100%;
+
+} */
+
+.border{        /* 'border' is sub-class : for hover-whiter bordered box  */
+
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+
+/* box2 */
+
+.add-first{
+    color: #cccccc;
+    font-size:0.85rem;     /* rem: relative unit w.r.t root element */
+    margin-left: 15px;
+}
+
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+     /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
+     display: flex;
+     align-items: center;
+}
+
+/* box3 */
+
+.nav-search{
+    /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
+    display: flex;
+    justify-content: space-evenly; /* All , search amazon  and search icon spaced */
+    background-color: pink;   /* For Check */
+    width: 750px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;     /* to remove default border of '<select>' */
+}
+
+.search-input{
+    width: 100%;    /* Take all the available space ( when 'All' which is select and 'search-icon' take their own ) */
+    font-size: 1rem;   /* Search Amazon - placeholder has size biger comparitively */
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+
+    /* make 'search icon' at center of the box  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2rem;  /* icon larger */
+    background-color: #febd68 ;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+/* box 4 */
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+     font-weight: 700;   /* darker */
+}
+
+/* box 5 */
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;    /* darker */
+}
+
+
+/* box 6  */
+.nav-cart i{       /*Apply to all icons-'i' of class 'nav-cart' */
+    font-size: 30px;
+
+}
+
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;    /* making 'cart' darker */
+}
+
+
+            /* Panel  */
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+     color: white;
+     /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */
+     display: flex;
+     align-items: center;     /* vertically center - croxx axes */
+     justify-content: space-evenly;  
+}
+
+.panel-ops p{               /*Apply to all para-'p' of class 'panel-ops' */
+    display: inline;
+    margin-left: 15px;
+   
+   
+}
+
+.panel-ops{
+    width: 70%;
+}
+
+.panel-all{
+    font-weight: 700;
+}
+
+.panel-deals{
+    font-weight: 700;
+}
+
+
+   /* HERO SECTION  */
+
+.hero-section{
+    background-image: url("../ProjectPhotos/hero_image.jpg");
+    background-size: cover;
+    height: 380Px;
+
+    /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */
+    
+    display: flex;
+    justify-content: center;   /* its items are at center on main axix- horizonal  */
+    align-items: flex-end;  /* items at the end (bottom here ) of cross-axix */
+}
+
+.hero-msg{
+
+    background-color: white;
+    color: black;
+    width:80% ;
+    height: 40px;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+
+ /* make 'message' at center of the box  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .hero-msg a{
+ color: #007185;
+ text-decoration: none;   /* remove underline from link */
+}
+
+
+        /* Shoping Section  */
+
+.shop-section{
+    display: flex;    /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
+    justify-content: space-evenly;
+    flex-wrap: wrap;   /* so that only 4 boxes of choices will be in one line*/
+    background-color: #e2e7e6;   /* background-color similar to the hero-section background-image*/
+ 
+}
+
+.box{    
+    border: 2px solid black;  
+    height: 400px;
+    width: 23%;
+    background-color: white;
+
+    padding: 20px 0px 15px;  /*top right bottom left.*/
+    margin-top: 15px;
+}
+
+.box a{
+    color: #007185;
+ text-decoration: none;   /* remove underline from link */
+}
+
+.box-img{
+    height: 300px;    /* it takes max of box height(400px) -> 300px */
+
+    /* Background-image is already appled as inline CSS- in html file as attributes */
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+
+                  
+                    /* FOOTER  */
+footer{
+    margin-top: 15px;
+}
+
+/* panel 1 */
+
+.foot-panel1{
+    background-color: #37475A;
+    height: 50px;
+    font-size: 0.85rem;
+
+    /* Make the items of this container at center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}      
+
+.foot-panel1 a{
+    color: white;
+ text-decoration: none;   /* remove underline from link */
+}
+
+/* foot-panel 2  */
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 400px;
+
+     /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
+    display: flex;
+    justify-content: space-evenly;  
+
+}
+
+ul{
+    margin-top: 40px;
+}
+
+
+ul a{                 /* <a> of <ul> */
+
+    display: block;
+    color:#dddddd;
+    text-decoration: none;  /* Remove underline*/
+     font-size: 0.85rem;
+     margin-top: 5px;
+}
+
+
+/* foot-panel 3  */
+
+.foot-panel3{
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 70px;
+
+    /* Make the items of this container at center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+
+}
+
+.end-logo{
+    height:49px;
+    width: 99px;
+    background-image: url("../ProjectPhotos/amazon_logo.png");
+    background-size: cover;
+
+
+}
+
+.foot-currency{
+    color: white;
+    border: 0.8px solid white;
+    padding: 6px 18px 6px 8px;
+    height: 25px;
+    width: 125px;
+  /* Make at center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+.foot-currency a{
+    margin-left: 3px;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* foot- panel4  */
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+.pages{
+    padding-top: 25px;
+}
+
+.pages a{
+    padding-right: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    margin-top: 5px;
+}
