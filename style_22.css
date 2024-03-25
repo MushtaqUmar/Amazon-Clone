@@ -1,6 +1,5 @@
 
-* {
-    /* Universally to all elements*/
+* {     /* Universally to all elements*/
     margin: 0;
     font-family: Arial;
     border: border-box;
@@ -416,8 +415,6 @@ ul a {
 }
 
 
-
-
 /* -----------------Responsiveness for tab/ipad type  ----------- */
 
 /* type 1  e.g ipad pro  */
@@ -615,7 +612,6 @@ ul a {
     .foot-panel2 {
         height: 500px;
     }
-
     .foot-panel2 ul a {
         /* <a> of <ul> */
         font-size: 0.3rem;
