@@ -1,3 +1,4 @@
+
 * {
     /* Universally to all elements*/
     margin: 0;
@@ -417,7 +418,7 @@ ul a {
 
 
 
-/* --------------------------- Responsiveness -------------------- */
+/* -----------------Responsiveness for tab/ipad type  ----------- */
 
 /* type 1  e.g ipad pro  */
 @media(max-width: 1300px) and ((min-width: 949px)) {
@@ -571,11 +572,11 @@ ul a {
     }
 
     .panel-deals{  /* remove overlapping and make it at certain distance like in desktop view */
-        margin-left: 16rem;
+        margin-left: 18rem;
     }
 
     /* To make the scroll bar hide : for chrome,opera, safari etc */
-    .panel ::-webkit-scrollbar {  
+    .panel::-webkit-scrollbar {  
         display: none;
     }
 
