@@ -1,100 +1,114 @@
-*{    /* Universally to all elements*/
-    margin : 0;
+* {
+    /* Universally to all elements*/
+    margin: 0;
     font-family: Arial;
-    border:border-box;  /* Put margin, padding withing height and width of elements */
+    border: border-box;
+    /* Put margin, padding withing height and width of elements */
 }
-
-/* Default styles */
 
 
 /*----------------------- Header Section ------------------------- */
-.navbar{
+.navbar {
     width: 100%;
     height: 60px;
     background-color: #0f1111;
     color: white;
     /* making flex container AND thus all its elements will be on main-axes~horinzontal by-default */
     display: flex;
-    align-items: center;    /* items center to cross-axis */
+    align-items: center;
+    /* items center to cross-axis */
     justify-content: space-between;
 
-    transition: all 2s ease;     /* for media query, the changes get applied smoothly */
+    transition: all 2s ease;
+    /* for media query, the changes get applied smoothly */
 }
 
+.menu-smallerScreen{
+    display: none;    /* will use it for smaller screens below(mobile phone media query */
+}
 /* box 1  */
-.left-part{
-    width: 20% ;
+.left-part {
+    width: 20%;
     display: flex;
-    align-items: center;    /* items center to cross-axis */
+    align-items: center;
+    /* items center to cross-axis */
     justify-content: space-evenly;
 
 }
 
-.nav-logo{
-    height:49px;
+.nav-logo {
+    height: 49px;
     width: 99px;
     background-image: url("./ProjectPhotos/amazon_logo.png");
-    background-size: cover; 
+    background-size: cover;
 }
 
 
-.border{        /* 'border' is sub-class : for hover-whiter bordered box  */
+.border {
+    /* 'border' is sub-class : for hover-whiter bordered box  */
     border: 1.5px solid transparent;
 }
 
-.border:hover{
+.border:hover {
     border: 1.5px solid white;
 }
 
 /* box2 */
-.nav-address .add-first{
+.nav-address .add-first {
     color: #cccccc;
-    font-size: 0.85rem;     /* rem: relative unit w.r.t root element */
+    font-size: 0.85rem;
+    /* rem: relative unit w.r.t root element */
     margin-left: 1rem;
 }
 
-.add-sec{
+.add-sec {
     font-size: 1rem;
-    margin-left: 3px;       /* bcz close to location icon */
+    margin-left: 3px;
+    /* bcz close to location icon */
 }
 
-.add-icon{
-     /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
-     display: flex;
-     align-items: center;
+.add-icon {
+    /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
+    display: flex;
+    align-items: center;
 }
 
 /* box3 */
-.nav-search{
+.nav-search {
     /* making flex container AND thus all its elements will be in main-axes~horinzontal bydefault */
     display: flex;
-    justify-content: space-evenly; /* All , search amazon  and search icon spaced */
-    background-color: pink; 
-    width: 50%; /* rem: for responsiveness*/
+    justify-content: space-evenly;
+    /* All , search amazon  and search icon spaced */
+    background-color: pink;
+    width: 50%;
+    /* rem: for responsiveness*/
     height: 2.5rem;
     border-radius: 4px;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid orange;
 }
 
-.search-select{
+.search-select {
     background-color: #f3f3f3;
     width: 3.5rem;
     text-align: center;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    border: none;     /* to remove default border of '<select>' */
+    border: none;
+    /* to remove default border of '<select>' */
 }
 
-.search-input{
-    width: 100%;    /* Take all the available space ( when 'All' which is select and 'search-icon' take their own ) */
-    font-size: 1rem;   /* Search Amazon - placeholder has size biger comparitively */
+.search-input {
+    width: 100%;
+    /* Take all the available space ( when 'All' which is select and 'search-icon' take their own ) */
+    font-size: 1rem;
+    /* Search Amazon - placeholder has size biger comparitively */
     border: none;
 }
 
-.search-icon{
+.search-icon {
     width: 3rem;
 
     /* make 'search icon' at center of the box  */
@@ -102,72 +116,81 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 1.2rem;  /* icon larger */
-    background-color: #febd68 ;
+    font-size: 1.2rem;
+    /* icon larger */
+    background-color: #febd68;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     color: #0f1111;
 }
 
 /* box 4 & b0x 5 : Same CSS*/
-.right-part{
-    width: 25%; /* bcz: left-part = 25%, nav-search(mid) = 50% and this takes remaining for any device dimensions */
+.right-part {
+    width: 25%;
+    /* bcz: left-part = 25%, nav-search(mid) = 50% and this takes remaining for any device dimensions */
     display: flex;
-    align-items: center;    /* items center to cross-axis */
+    align-items: center;
+    /* items center to cross-axis */
     justify-content: space-evenly;
 }
 
-.right-part span{
+.right-part span {
     font-size: 0.7rem;
 }
 
-.nav-second{
+.nav-second {
     font-size: 0.85rem;
-     font-weight: 700;   /* darker */
+    font-weight: 700;
+    /* darker */
 }
 
 
 
 /* box 6  */
-.nav-cart i{       /*Apply to all icons-'i' of class 'nav-cart' */
-    font-size: 30px; 
+.nav-cart i {
+    /*Apply to all icons-'i' of class 'nav-cart' */
+    font-size: 30px;
 }
 
 
-.nav-cart{   /* to text = "cart" */
-    font-size: 0.85rem; 
-    font-weight: 700;    /* making 'cart' darker */
+.nav-cart {
+    /* to text = "cart" */
+    font-size: 0.85rem;
+    font-weight: 700;
+    /* making 'cart' darker */
 }
 
 
 
 /*----------------  2nd Nav-Bar type known as 'panel'  -----------------*/
 
- /* Panel  */
-.panel{
+/* Panel  */
+.panel {
     height: 40px;
     background-color: #222f3d;
-     color: white;
-     /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */
-     display: flex;
-     align-items: center;     /* vertically center - croxx axes */
-     justify-content: space-evenly;  
+    color: white;
+    /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */
+    display: flex;
+    align-items: center;
+    /* vertically center - croxx axes */
+    justify-content: space-evenly;
 }
 
-.panel-all{
+.panel-all {
     font-weight: 700;
 }
 
-.panel-ops p{               /*Apply to all para-'p' of class 'panel-ops' */
+.panel-ops p {
+    /*Apply to all para-'p' of class 'panel-ops' */
     display: inline;
     margin-left: 0.8rem;
 }
 
-.panel-ops{
+.panel-ops {
     width: 70%;
 }
 
-.panel-deals{
+.panel-deals {
     font-weight: 700;
 }
 
@@ -175,65 +198,76 @@
 
 /*------------------------ HERO SECTION -------------------------------- */
 
-.hero-section{
+.hero-section {
     background-image: url("./ProjectPhotos/hero_image.jpg");
     background-size: cover;
     height: 24rem;
 
-    /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */   
+    /* making flex container AND thus all its elements will be on main-axes~horinzontal bydefault */
     display: flex;
-    justify-content: center;   /* its items are at center on main axix- horizonal  */
-    align-items: flex-end;  /* items at the end (bottom here ) of cross-axix- i.e., message at the bottom of hero section (image also but that is fit as background of hero-section */
+    justify-content: center;
+    /* its items are at center on main axix- horizonal  */
+    align-items: flex-end;
+    /* items at the end (bottom here ) of cross-axix- i.e., message at the bottom of hero section (image also but that is fit as background of hero-section */
 }
 
-.hero-msg{
+.hero-msg {
 
     background-color: white;
     color: black;
-    width:80% ;
+    width: 80%;
     height: 2.5rem;
     font-size: 0.85rem;
     margin-bottom: 1.7rem;
 
- /* make 'message' at center of the box  */
+    /* make 'message' at center of the box  */
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- .hero-msg a{
- color: #007185;
- text-decoration: none;   /* remove underline from link */
+.hero-msg a {
+    color: #007185;
+    text-decoration: none;
+    /* remove underline from link */
 }
 
 
 /*------------------------ Shoping Section -------------------------------  */
 
-.shop-section{
-    display: flex;    /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
+.shop-section {
+    display: flex;
+    /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
     justify-content: space-evenly;
-    flex-wrap: wrap;   /* so that only 4 boxes of choices will be in one line*/
-    background-color: #e2e7e6;   /* background-color similar to the hero-section background-image*/
- 
+    flex-wrap: wrap;
+    /* so that only 4 boxes of choices will be in one line*/
+    background-color: #e9ebeb;
+    /* background-color similar to the hero-section background-image*/
+
 }
 
-.box{    
-    border: 2px solid black;  
-    height: 28rem;   /* around 450px if 1rem= 16px */
-    width: 23%;   /* so that 4 images come in single row, and then wrap */
+.box {
+    border: 2px solid black;
+    height: 28rem;
+    /* around 450px if 1rem= 16px */
+    width: 23%;
+    /* so that 4 images come in single row, and then wrap */
     background-color: white;
 
-    padding: 20px 0px 15px 0px;  /*top right bottom left.*/
+    padding: 20px 0px 15px 0px;
+    /*top right bottom left.*/
     margin-top: 1rem;
 }
 
-.box a{
+.box a {
     color: #007185;
-    text-decoration: none;   /* remove underline from link */
+    text-decoration: none;
+    /* remove underline from link */
 }
 
-.box-img{
-    height: 300px;    /* it takes max of box height(400px) -> 300px */
+.box-img {
+    height: 300px;
+    /* it takes max of box height(400px) -> 300px */
 
     /* Background-image is already appled as inline CSS- in html file as attributes */
     background-size: cover;
@@ -241,21 +275,21 @@
     margin-bottom: 1rem;
 }
 
-.box-content{
+.box-content {
     margin-left: 10px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 
-                  
+
 /*---------------------- FOOTER -------------------------*/
-footer{
+footer {
     margin-top: 15px;
 }
 
 /* panel 1 */
 
-.foot-panel1{
+.foot-panel1 {
     background-color: #37475A;
     height: 50px;
     font-size: 0.85rem;
@@ -264,44 +298,50 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-  
-}      
 
-.foot-panel1 a{
+}
+
+.foot-panel1 a {
     color: white;
- text-decoration: none;   /* remove underline from link */
+    text-decoration: none;
+    /* remove underline from link */
 }
 
 /* foot-panel 2  */
-.foot-panel2{
+.foot-panel2 {
     background-color: #222f3d;
     color: white;
     height: 400px;
 
-    display: flex;     /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
-    justify-content: space-evenly; 
+    display: flex;
+    /* making flex container AND thus all its elements will be on main-axes~(horinzontal bydefault) */
+    justify-content: space-evenly;
 }
 
-ul{
+ul {
     margin-top: 40px;
 }
 
 
-ul a{                 /* <a> of <ul> */
-    color:#dddddd;
-    text-decoration: none;  /* Remove underline*/
+ul a {
+    /* <a> of <ul> */
+    color: #dddddd;
+    text-decoration: none;
+    /* Remove underline*/
     font-size: 0.85rem;
     /* for spacing between <a> elements:-  */
-    display: block; /* so thet the margin-top below will be applied to <a> elements */
+    display: block;
+    /* so thet the margin-top below will be applied to <a> elements */
     margin-top: 5px;
 }
 
 
 /* foot-panel 3  */
 
-.foot-panel3{
+.foot-panel3 {
     background-color: #222f3d;
-    border-top: 0.5px solid white; /* white line */
+    border-top: 0.5px solid white;
+    /* white line */
     height: 70px;
 
     /* Make the items of this container at center */
@@ -309,105 +349,140 @@ ul a{                 /* <a> of <ul> */
     justify-content: center;
     align-items: center;
 
-  
+
 
 }
 
-.end-logo{
+.end-logo {
     background-image: url("./ProjectPhotos/amazon_logo.png");
-    background-size: cover; /* important: so that image fix in the applied dimensions */
-    height:49px;
+    background-size: cover;
+    /* important: so that image fix in the applied dimensions */
+    height: 49px;
     width: 99px;
-    
+
 }
 
-.foot-currency{
+.foot-currency {
     color: white;
     border: 0.8px solid white;
     padding: 6px 18px 6px 8px;
     height: 25px;
     width: 125px;
-  /* Make at center */
+    /* Make at center */
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
 
 }
 
-.foot-currency a{
-    margin-left: 3px;  /* space from icon '$' */
+.foot-currency a {
+    margin-left: 3px;
+    /* space from icon '$' */
     text-decoration: none;
     color: white;
 }
 
 
 /* foot- panel4  */
- .foot-panel4{
+.foot-panel4 {
     background-color: #0f1111;
     color: white;
     height: 80px;
-    font-size: 0.7rem;   /* to all its elements (even its childs text) */
-    text-align: center;  /* center horizontally */
+    font-size: 0.7rem;
+    /* to all its elements (even its childs text) */
+    text-align: center;
+    /* center horizontally */
 
- }
-
-.pages{
-    padding-top: 25px;  /* vertically towards center */
-} 
-
-.pages a{
-    padding-right: 25px;  /* spacing between <a> elements */
-    color: white;   /* color of links from blue to white */
-    text-decoration: none; 
 }
 
-.copyright{ 
-    margin-top: 5px; /* at distance from <a> above*/
-} 
+.pages {
+    padding-top: 25px;
+    /* vertically towards center */
+}
+
+.pages a {
+    padding-right: 25px;
+    /* spacing between <a> elements */
+    color: white;
+    /* color of links from blue to white */
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 5px;
+    /* at distance from <a> above*/
+}
 
 
 
 
-/* -----------------Responsiveness for tab/ipad type  ----------- */
+/* --------------------------- Responsiveness -------------------- */
 
 /* type 1  e.g ipad pro  */
 @media(max-width: 1300px) and ((min-width: 949px)) {
+
     /* to fit msg in single row like in desktop  */
-   .hero-section .hero-msg {
-       width: 90%;        
-   }
-
-   /* 3 boxes in row  */
-   .shop-section {
-       justify-content: flex-start;
-   }
-   .box {
-       width: 32%;
-       /* for spacing between (we have not used space-evenly here, bcz last row may contain 2/1 box(that shord be at start(not at mid) ) ) */
-       margin-left: 10px;
-   }
-
-   /* to make 2nd panel little bit at distance  */
-   .panel-all {
-     margin-left: 15px;
+    .hero-section .hero-msg {
+        width: 90%;
     }
-} 
+
+    /* 3 boxes in row  */
+    .shop-section {
+        justify-content: flex-start;
+    }
+
+    .box {
+        width: 32%;
+        /* for spacing between (we have not used space-evenly here, bcz last row may contain 2/1 box(that shord be at start(not at mid) ) ) */
+        margin-left: 10px;
+    }
+
+    /* to make 2nd panel little bit at distance  */
+    .panel-all {
+        margin-left: 15px;
+    }
+}
 
 /* Ipad type 2 (smaller screens) than earlier */
 @media(max-width: 950px) {
-    .hero-section { 
-        height: 18rem;  /* make image smaller: visible */
+/* 2nd nav-bar type : panel */
+    .panel {
+        height: 4rem;
+        /*  to make panel elements move left-right when I scroll on elements */
+        overflow-x: scroll;
+        white-space: nowrap;
+        /*keeps all text on a single line, preventing wrapping. */
+        scroll-behavior: smooth;
+        /* Smooth scrolling */
     }
-     /* to fit msg in single row like in desktop  */
+
+    .panel-deals {
+        /* remove overlapping and make it at certain distance like in desktop view */
+        margin-left: 18rem;
+    }
+
+    /* To make the scroll bar hide : for chrome,opera, safari etc */
+    .panel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hero section */
+    .hero-section {
+        height: 18rem;
+        /* make image smaller: visible */
+    }
+
+    /* to fit msg in single row like in desktop  */
     .hero-section .hero-msg {
-        width: 90%;        
+        width: 90%;
     }
 
     /* to put 3 boxes in row  */
     .shop-section {
         justify-content: flex-start;
     }
+
     .box {
         width: 31%;
         /* for spacing between (we have not used space-evenly here, bcz last row may contain 2/1 box(that shord be at start(not at mid) ) ) */
@@ -415,46 +490,139 @@ ul a{                 /* <a> of <ul> */
     }
 
     /* to make 2nd panel little bit at distance  */
-   .panel-all {
-    margin-left: 15px;
-   }
+    .panel-all {
+        margin-left: 15px;
+    }
 
-} 
+}
 
 
 /*-------------Responsiveness for Mobile phones ---------------- */
 /* Media query for iPhone */
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+    .navbar{
+        width: 100vw;
+        flex-wrap: wrap;
+        height: auto;  /* as per content (importent as we are using wrap , so content may go to next line */
+        align-items: center;
+        justify-content: center;
+
+        position: relative; /* for .right-part below */
+    }
+
+    .menu-smallerScreen{
+        display: inline-block;
+        width: 20px; /* Set the width of the icon */
+        height: 20px; /* Set the height of the icon */
+        margin-left: 3px;
+        font-size: 20px;
+        transition: all .2s ease;
+    }
+
+    .navbar .left-part{
+        /* display: none; */
+        width: 90%;
+        font-size: 0.5rem;
+         /* == top of .right-part below : to position in streight line  */
+    }
+    .left-part .nav-logo{
+        width: 30%;
+    }
+    .left-part .nav-address{
+        width: 100%;  /* so that positioned perfectly side to its container element i.e., amazon-logo and take whole space which is unused*/
+    }
+    .nav-address .add-icon{
+        margin-left: 5px;
+    }
+
+
+    /* wrapped to next line, thus make it to take whole width */
+    .nav-search{
+       width: 100%; /* wrt to parent (.navbar) */
+       margin: 5px;
+       margin-top: 10px;
+    }
+
+
+    /* wrapped to 3rd line, but we need it in line 1 */
+    .navbar .right-part{
+        position: absolute;  /* w.r.t to its non-static parent element i.e., .navbar */
+        width: 40%;
+        right: 10px;
+        top: 10px;
+        font-size: 1rem;
+    }
+
+    .right-part .nav-cart i{
+        font-size: 25px;
+    }
     
+    .right-part .returns-orders{
+        display: none;
+    }
+
+    /* 2nd nav-bar type : panel */
+    .panel{
+        height:4rem;
+        /*  to make panel elements move left-right when I scroll on elements */
+        overflow-x: scroll;
+        white-space: nowrap;   /*keeps all text on a single line, preventing wrapping. */
+        scroll-behavior: smooth;  /* Smooth scrolling */
+    }
+
+    .panel-deals{  /* remove overlapping and make it at certain distance like in desktop view */
+        margin-left: 16rem;
+    }
+
+    /* To make the scroll bar hide : for chrome,opera, safari etc */
+    .panel ::-webkit-scrollbar {  
+        display: none;
+    }
 
     /* hero section  */
-    .hero-section { 
-        height: 10rem;  /* make image smaller: visible */
+    .hero-section {
+        height: 25vh;
+        /* make image smaller: visible */
+
     }
     .hero-msg {
-         font-size: 0.5rem;
+        background-color: #2f4052;
+        color:#ffffff;
+        height: auto;
+        font-size: 0.87rem;
+        text-align: center;
+    }
+    .hero-msg a{
+        color: #cccccc;
     }
 
     /* shop section  */
     .shop-section {
-        justify-content: flex-start;
+        justify-content: flex-evenly;
     }
+
     .box {
         width: 45%;
-    } 
-
+        height:300px;
+        font-size: 0.6rem;
+    }
+    .box-img{
+        height: 200px;
+        overflow: hidden;
+    }
     /* footer section  */
     .foot-panel2 {
         height: 500px;
     }
 
-    .foot-panel2 ul a{                 /* <a> of <ul> */
+    .foot-panel2 ul a {
+        /* <a> of <ul> */
         font-size: 0.3rem;
 
         /* for spacing between <a> elements:-  */
-        display: block; /* so thet the margin-top below will be applied to <a> elements */
+        display: block;
+        /* so thet the margin-top below will be applied to <a> elements */
         margin-top: 8px;
     }
 
 }
-
