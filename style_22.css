@@ -418,7 +418,7 @@ ul a {
 /* -----------------Responsiveness for tab/ipad type  ----------- */
 
 /* type 1  e.g ipad pro  */
-@media(max-width: 1300px) and ((min-width: 949px)) {
+@media(max-width: 1300px) {
 
     /* to fit msg in single row like in desktop  */
     .hero-section .hero-msg {
@@ -443,7 +443,7 @@ ul a {
 }
 
 /* Ipad type 2 (smaller screens) than earlier */
-@media(max-width: 950px) {
+@media(max-width: 1000px) {
 /* 2nd nav-bar type : panel */
     .panel {
         height: 4rem;
